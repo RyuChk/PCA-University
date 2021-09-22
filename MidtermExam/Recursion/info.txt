@@ -1,0 +1,53 @@
+LINKED: https://www.geeksforgeeks.org/recursion/
+
+What is recursion?
+    - recursion(recursive) is method which function will called it self until it reach a base case or end cases.
+
+What is stack overflow?
+    - A Phenomenom which happened when base case is not reachble or not defined.
+
+Direct and In-direct recursion?
+    Direct --> Called same function or itself
+    Indirect --> Called other fucntion to perform recursive
+
+    // An example of direct recursion
+        void directRecFun()
+        {
+            // Some code....
+
+            directRecFun();
+
+            // Some code...
+        }
+
+        // An example of indirect recursion
+        void indirectRecFun1()
+        {
+            // Some code...
+
+            indirectRecFun2();
+
+            // Some code...
+        }
+        void indirectRecFun2()
+        {
+            // Some code...
+
+            indirectRecFun1();
+
+            // Some code...
+        }
+
+Tailed and non-tailed recursion
+    - A recursive function si taledd function becasue the first it called is the last thing it executed.
+
+Asymthotic Analysis method
+    - Tree method
+    - Subtitution method
+
+QUESTION : 
+https://www.geeksforgeeks.org/practice-questions-for-recursion/
+https://www.geeksforgeeks.org/practice-questions-for-recursion-set-2/ 
+https://www.geeksforgeeks.org/practice-questions-for-recursion-set-3/
+https://www.geeksforgeeks.org/practice-questions-for-recursion-set-4/
+https://www.geeksforgeeks.org/practice-questions-for-recursion-set-5/

@@ -1,0 +1,23 @@
+What is stack?
+    - Stack is linear data struture which use concept of LIFO (last in first out)
+     ___
+    | 1 | --> Top (latest input which is put in)
+    | - | 
+    | 2 | --> Next value
+    | - |
+    | 3 | --> Bottom of stack (last info which can be access)
+    /////
+
+Differenct with array
+    Stack
+     - As linear data structure we cannot access data by it location but need to take each index out of the Top
+     - Stack can have different type of data
+     - OPERATION is Push (adding / insertion) and Pop (delete or take out latest / top index out of stack)
+     - Dynamic Size ( can be increase or decrese )
+     - Because of linear data structure we only can do linear search
+
+    Array
+     - Way to organize and keep the same of data together which data keep belong to it indexes. Array[index] --> access by it location/index
+     - Inserting and delete can be done by access it index
+     - Array has fixed size
+     - Flexible with linear and bineary search.

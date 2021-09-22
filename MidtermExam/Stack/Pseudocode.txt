@@ -1,0 +1,68 @@
+CLASS  stack(self, car) :
+    INPUT list of car, int 
+    OUTPUT 
+
+    SET self.stack as car
+    SET new_row as empty stack
+    
+    FUNCTION rm_top(self):
+        INPUT none 
+        OUTPUT pop out last index in stack
+        
+        RETURN pop out last  index in stack
+    
+    END FUNCTION
+
+    FUNCTION empty(self):
+        INPUT itself
+        OUTPUT is stack is empty or not, bool
+
+        IF self.stack is empty : THEN
+            RETURN true
+        ELSE :
+            RETURN false
+        END IF
+
+    END FUNCTION
+
+    FUNCTION size(self):
+        INPUT itself
+        RETURN size of stack, int
+
+        RETURN size of stack
+    END FUNCTION
+
+    FUNCTION contain(self, data)
+        INPUT itself and data to check inside stack, int
+        OUPUT is data inside stack or not, bool
+
+        IF data is in self.stack : THEN
+            RETURN true
+        ELSE
+            RETURN false
+        END IF
+
+    END FUNCTION
+
+CLASS valet_park(stack):
+    INPUT Inherit class stack as parent of this stack
+    
+    FUNCTION exit(self, car_id)
+        INPUT car_id, int
+        OUTPUT return car ID
+
+        IF self.contain(car) is true : THEN
+            SET temp as self.rm_top
+            IF temp is equal car_id : THEN
+                ADD self.new_row to stack
+                SET self.new_row as empty
+                RETURN car_id
+            ELSE:
+                ADD temp to self.new_row
+                RETURN function self.exit(car_id)
+            END IF
+        ELSE:
+            PRINT invalid input or car_id
+        END IF
+    END FUNCTION
+
