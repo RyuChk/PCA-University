@@ -1,0 +1,4 @@
+What is Asymtotic notation?
+    - A method that use to calculate time complexity of the program by amount of input. --> T(n)
+
+O(n!),O(n^3) > O(nlogn) > O(n) > O(log n) > O(1)

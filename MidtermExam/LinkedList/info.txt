@@ -1,12 +1,12 @@
-Adventage of linked list;
+-*- Adventage of linked list;
     - Dynamic size (Array size is fixed and data need to be similar type [stack type])
     - Inserting element between linked list is cheaper than array because when Inserting data to array the array need to be shifted.
 
-Dis-Adventage of linked list
+-*- Dis-Adventage of linked list
     - Ramdon access is not allow this cuase by using class 
     - To add new data it need to run through all node make it slower
 
-Type of linkedList
+-*- Type of linkedList
     - singly linked list --> Normal linked list
         CLASS Note(data):
             self.Next = none
@@ -28,3 +28,12 @@ Type of linkedList
             self.Next = (node head) --> If it is last element
             self.pre = none --> What added from doubly linked list
             self.data = data
+
+-*- Class:
+    class DoublyLinkedList {
+        constructor() {
+        this.head = null;
+        this.tail = null;
+        this.length = 0;
+        }
+    }
